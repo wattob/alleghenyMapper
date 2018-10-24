@@ -2,7 +2,7 @@
 
 
 ## Date: 24 Oct 2018
-## Group Names:
+## Group Names: Nicholas Tocci, Rowan Castellanos, Ben Watto, Dillon Thoma
 
 
 
