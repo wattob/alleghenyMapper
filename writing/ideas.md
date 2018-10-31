@@ -58,16 +58,23 @@ The thesis in this article is an explanation of the Monty Hall Program. It expla
 
 This article will support the idea by providing a control to ensure that the results are correct. This is really important as without a firm understanding of the system will work and the win conditions, the system will be unstable.
 
-### Idea 4
+### Idea 4: Liar's
 1) Explain your idea for a class project.
 
+For this group project, we would examine the liar's paradox in detail. The liar's paradox involves a statement of a liar who states that he is lying. If the liar is lying, then the statement is true then they are not lying, but if the statement is true then the liar is lying, then the statement false. This creates a paradox of true and false. The statement creates contradiction when using binary truth values. If "this sentence is false" is true, then the sentence is false, but if the sentence states that it is false, and it is false, then it must be true, and so on.
+
 2) How is the idea connected to computer science?
+For this idea, we would use a randomization algorithm to create different statements given by the liar. Then we would use truth tables to see if a liar's paradox or if the statement has a determined value. For this program, we would use one evaluation for the first round because the statements true/false value becomes altered on the second evaluation. Another round would be performed with a second evaluation. The first statement given would also be randomized as true or false.
 
 3) What is the article's reference to support this idea? Note: Articles are no older than five years
 
+https://arxiv.org/pdf/1711.02456.pdf
+
 4) What is the central thesis to the article?
+The article focuses on roles of undecidability, universality, diagonalization, and self-reference when stuck in the Liar's Paradox.
 
 5) How will this article support your idea?
+This article supports our idea with its exploration of the Liar's Paradox. It will show us that when using a first evaluation there is no paradox, but on the second and third paradox will be created.
 
 
 ### Idea 5: Big 'O' Notation & Worst-Case Time Complexity
