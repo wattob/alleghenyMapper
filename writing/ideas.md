@@ -40,14 +40,23 @@ Please be sure that you justify why your idea is of interest to discrete structu
 ### Idea 3
 1) Explain your idea for a class project.
 
+The is an analysis on the Monty Hall Problem. The Monty Hall Problem is the idea that if you have 3 doors in front of you, 2 have a goat behind them and one has a car. You will make a choice and one of the doors that contains a goat, not the one you chose, is revealed. You then have the opportunity to switch. It is a higher probability that you will choose the car if you decide to switch in the second phase. We will use a computer algorithm to run this scenario many times to show that this conjecture is true.
+
 2) How is the idea connected to computer science?
+
+It is connected to Computer Science because we will use an algorithm to determine where the car has been placed and if we have gotten the choice correct. This involves an algorithm to place and conditional logic to determine if the choice was right.
 
 3) What is the article's reference to support this idea? Note: Articles are no older than five years
 
+https://arxiv.org/pdf/1808.05150.pdf
+
 4) What is the central thesis to the article?
+
+The thesis in this article is an explanation of the Monty Hall Program. It explains the win conditions and fractions that pertain to switching the doors.
 
 5) How will this article support your idea?
 
+This article will support the idea by providing a control to ensure that the results are correct. This is really important as without a firm understanding of the system will work and the win conditions, the system will be unstable.
 
 ### Idea 4
 1) Explain your idea for a class project.
