@@ -56,7 +56,7 @@ The thesis in this article is an explanation of the Monty Hall Program. It expla
 
 5) How will this article support your idea?
 
-This article will support the idea by providing a control to ensure that the results are correct. This is really important as without a firm understanding of the system will work and the win conditions, the system will be unstable.
+This article will support the idea by providing a control to ensure that the results are correct. This is really important as without a firm understanding of the system will work and the win conditions, the system will be unstable and fault.
 
 ### Idea 4: Liar's
 1) Explain your idea for a class project.
