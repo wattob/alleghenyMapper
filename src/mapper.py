@@ -67,8 +67,8 @@ def retrieveMap():
     # plt.show()
     return G
 
-def calculateShortestPath(start, end):
-    print("calculateShortestPath")
+def calculateShortestPath(G, start, end):
+    return(nx.shortest_path(G, start, end))
 
 def shortestPathUI(G):
     print("You have selected to find the shortest path. Is this correct (Y or N)")
@@ -111,7 +111,7 @@ def shortestPathUI(G):
             break
         if(endingLocation == "Back"):
             return
-    print(calculateShortestPath(startingLocation, endingLocation))
+    print(calculateShortestPath(G, startingLocation, endingLocation))
 
 def main():
     print("Hello, and welcome to the path-finding map")
