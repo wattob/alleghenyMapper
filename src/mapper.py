@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import sys
 
+# Rowan Castellanos, Ben Watto, Nicholas Tocci
+
 # def hidden():
 #     # G = nx.Graph()
 #     #
@@ -65,6 +67,25 @@ def retrieveMap():
     # plt.show()
     return G
 
+def shortestPathUI(G):
+    print("You have selected to find the shortest path. Is this correct (Y or N)")
+    while(True):
+        correct = input(" >> ")
+        if(correct == "Y"):
+            break
+        elif(correct == "N"):
+            return
+        else:
+            print("You have entered a wrong keywoard, please enter a Y or N.")
+
+    print(list(G.nodes))
+    while(True):
+    startingLocation = input(" Where are you starting?\n >> ")
+    startingLocation = startingLocation.upper()
+    if(startingLocation not in G.nodes):
+        print("You have entered a location that is not on the Graph")
+
+
 def main():
     print("Hello, and welcome to the path-finding map")
     G = retrieveMap()
@@ -75,10 +96,7 @@ def main():
         if(entry == "A"):
             allPaths(G)
         elif(entry == "B"):
-            print("You have selected to find the shortest paths.")
-            print(list(G.nodes))
-            startingLocation = input(" Where are you starting")
-            shortestPath(G)
+            shortestPathUI(G)
         elif(entry == "exit"):
             exit = True
 
