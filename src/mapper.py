@@ -67,24 +67,51 @@ def retrieveMap():
     # plt.show()
     return G
 
+def calculateShortestPath(start, end):
+    print("calculateShortestPath")
+
 def shortestPathUI(G):
     print("You have selected to find the shortest path. Is this correct (Y or N)")
+    print("Please enter (back) at anytime to return to the main menu")
     while(True):
         correct = input(" >> ")
+        correct = correct.upper()
         if(correct == "Y"):
             break
         elif(correct == "N"):
             return
+        elif(correct == "Back"):
+            return
         else:
             print("You have entered a wrong keywoard, please enter a Y or N.")
 
-    print(list(G.nodes))
     while(True):
-    startingLocation = input(" Where are you starting?\n >> ")
-    startingLocation = startingLocation.upper()
-    if(startingLocation not in G.nodes):
-        print("You have entered a location that is not on the Graph")
-
+        print(list(G.nodes))
+        startingLocation = input("Where are you starting?\n >> ")
+        startingLocation = startingLocation.upper()
+        if(startingLocation not in G.nodes):
+            print("You have entered a location that is not on the map.")
+            print("If you would like to return to the menu, please enter (back).")
+            print("Otherwise, please enter a correct location on the map")
+        elif(startingLocation in G.nodes):
+            print("You have entered the starting location of: ", startingLocation)
+            break
+        if(startingLocation == "Back"):
+            return
+    while(True):
+        print(list(G.nodes))
+        endingLocation = input("What is the end location for your route\n >> ")
+        endingLocation = endingLocation.upper()
+        if(endingLocation not in G.nodes):
+            print("You have entered a location that is not on the map.")
+            print("If you would like to return to the menu, please enter (back).")
+            print("Otherwise, please enter a correct location on the map")
+        elif(endingLocation in G.nodes):
+            print("You have entered the starting location of: ", endingLocation)
+            break
+        if(endingLocation == "Back"):
+            return
+    print(calculateShortestPath(startingLocation, endingLocation))
 
 def main():
     print("Hello, and welcome to the path-finding map")
