@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import sys
 
-# Rowan Castellanos, Ben Watto, Nicholas Tocci
+# Rowan Castellanos, Ben Watto, Nicholas Tocci, Dillon Thoma
 
 def showMap(G):
     pos = nx.spring_layout(G)  # positions for all nodes
