@@ -11,9 +11,9 @@ def showMap(G):
     nx.draw_networkx_nodes(G, pos, node_size=700)
 
     # edges
-    nx.draw_networkx_edges(G, pos, edgelist=G.edges(data = True),edge_color = "b",width=6)
+    nx.draw_networkx_edges(G, pos, edgelist=G.edges(data = True),edge_color = "b",width=8)
     # labels
-    nx.draw_networkx_labels(G, pos, font_size=2, font_family='sans-serif')
+    nx.draw_networkx_labels(G, pos, font_size=5, font_family='sans-serif')
 
     plt.axis('off')
     plt.show()
@@ -131,13 +131,14 @@ def main():
     print("Would you like to show the map, find the shortest path, or find all paths from one place to another?")
     while(exit != True):
         entry = input("Enter (A) to show the map, (B) for the shortest, (C) to find all paths from one place to another, or (exit) to close the program.\n  >> ")
+        entry = entry.upper()
         if(entry == "A"):
             showMap(G)
         elif(entry == "B"):
             shortestPathUI(G)
         elif(entry == "C"):
             allPathsFromLocationUI(G)
-        elif(entry == "exit"):
+        elif(entry == "EXIT"):
             exit = True
 
 if __name__ == "__main__":
