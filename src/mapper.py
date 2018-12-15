@@ -3,6 +3,8 @@ import networkx as nx
 import sys
 
 # Rowan Castellanos, Ben Watto, Nicholas Tocci, Dillon Thoma
+# Created using the package networkx
+# Documentation found: https://networkx.github.io/documentation/stable/index.html
 
 def showMap(G):
     pos = nx.spring_layout(G)  # positions for all nodes
