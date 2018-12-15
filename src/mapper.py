@@ -120,7 +120,7 @@ def shortestPathUI(G):
             print("If you would like to return to the menu, please enter (back).")
             print("Otherwise, please enter a correct location on the map")
         elif(endingLocation in G.nodes):
-            print("You have entered the starting location of: ", endingLocation)
+            print("You have entered the ending location of: ", endingLocation)
             break
         if(endingLocation == "Back"):
             return
